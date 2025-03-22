@@ -38,8 +38,7 @@ const OrderDetails: React.FC = () => {
           Detalhes do Pedido #{order.id}
         </h1>
       </div>
-
-      <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-2xl shadow-xl mb-6 border border-gray-700 text-left">
+      <div className="bg-white/10 p-6 rounded-2xl shadow-xl mb-6 border border-gray-700 text-left">
         <h2 className="text-xl font-bold text-white mb-4 text-center">
           Informações do Pedido
         </h2>
@@ -49,7 +48,7 @@ const OrderDetails: React.FC = () => {
         <p><strong className="font-semibold text-blue-200">Custo de Entrega:</strong> R${order.delivery_cost.toFixed(2)}</p>
       </div>
 
-      <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-2xl shadow-xl mb-6 border border-gray-700 text-left">
+      <div className="bg-white/10 p-6 rounded-2xl shadow-xl mb-6 border border-gray-700 text-left">
         <h2 className="text-xl font-bold text-white mb-4 text-center">
           Informações do Cliente
         </h2>
@@ -57,7 +56,7 @@ const OrderDetails: React.FC = () => {
         <p><strong className="font-semibold text-blue-200">Endereço:</strong> {order.customer.address}</p>
       </div>
 
-      <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-2xl shadow-xl mb-6 border border-gray-700">
+      <div className="bg-white/10 p-6 rounded-2xl shadow-xl mb-6 border border-gray-700">
         <h2 className="text-xl font-bold text-white text-center mb-4">Itens do Pedido</h2>
         {order.items.map((item, index) => (
           <div
@@ -80,7 +79,7 @@ const OrderDetails: React.FC = () => {
         ))}
       </div>
 
-      <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-6 rounded-2xl shadow-xl border border-gray-700 text-right">
+      <div className="bg-white/10 p-6 rounded-2xl shadow-xl border border-gray-700 text-right">
         <h2 className="text-xl font-bold text-white">
           Total do Pedido: R${order.total.toFixed(2)}
         </h2>
