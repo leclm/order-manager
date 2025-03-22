@@ -27,7 +27,7 @@ const Home: React.FC = () => {
   }, [searchName, searchStatus, orders]);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black shadow-xl mb-6 p-10 border border-gray-700 text-left">
       <h1 className="text-2xl font-bold text-white mb-6">Lista de Pedidos</h1>
       
       <OrderFilters 

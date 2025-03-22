@@ -20,26 +20,18 @@ const OrderFilters: React.FC<OrderFiltersProps> = ({
         placeholder="Buscar por nome do cliente..."
         value={searchName}
         onChange={(e) => setSearchName(e.target.value)}
-        className="w-full p-2 rounded-lg border border-gray-700 bg-white/10 text-white placeholder-gray-400"
+        className="w-full p-2 rounded-lg border border-gray-700 bg-gray-900 text-white placeholder-gray-500 shadow-inner"
       />
 
       <select
         value={searchStatus}
         onChange={(e) => setSearchStatus(e.target.value)}
-        className="p-2 rounded-lg border border-gray-700 bg-white/10 text-white"
+        className="p-2 rounded-lg border border-gray-700 bg-gray-900 text-white shadow-inner"
       >
-        <option value="" className="text-black">
-          Todos os Status
-        </option>
-        <option value="Cancelado" className="text-black">
-          Cancelado
-        </option>
-        <option value="Entregue" className="text-black">
-          Entregue
-        </option>
-        <option value="Pendente" className="text-black">
-          Pendente
-        </option>
+        <option value="">Todos os Status</option>
+        <option value="Cancelado">Cancelado</option>
+        <option value="Entregue">Entregue</option>
+        <option value="Pendente">Pendente</option>
       </select>
     </div>
   );
