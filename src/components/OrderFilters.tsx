@@ -27,6 +27,7 @@ const OrderFilters: React.FC<OrderFiltersProps> = ({
         value={searchStatus}
         onChange={(e) => setSearchStatus(e.target.value)}
         className="p-2 rounded-lg border border-gray-700 bg-gray-900 text-white shadow-inner"
+        role="listbox"
       >
         <option value="">Todos os Status</option>
         <option value="Aprovado">Aprovado</option>
