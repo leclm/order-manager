@@ -90,6 +90,27 @@ export const mockOrders = [
             "price": 10.00
           }
         ]
+      },
+      {
+        "uuid": "c9c2f76f-2340-4cf6-9ceb-d4aade34a056",
+        "id": "158928",
+        "status": "Entregue",
+        "total": 20.00,
+        "delivery_cost": 10.00,
+        "shipping_method": "Entrega Normal",
+        "delivery_estimated": "2025-03-30",
+        "customer": {
+          "name": "Jéssica Lima",
+          "address": "Av. Ana Ribas, 234"
+        },
+        "items": [
+          {
+            "imagem": "https://images.pexels.com/photos/8716081/pexels-photo-8716081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "name": "Caneta Verde",
+            "quantity": 1,
+            "price": 10.00
+          }
+        ]
       }
     ]
   }

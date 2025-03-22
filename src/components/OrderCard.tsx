@@ -8,12 +8,14 @@ interface OrderCardProps {
 
 const getStatusColor = (status: string) => {
   switch (status) {
-    case "Pendente":
-      return "bg-yellow-100 text-yellow-900";
-    case "Entregue":
-      return "bg-green-100 text-green-900";
+    case "Aprovado":
+      return "bg-blue-100 text-blue-900";
     case "Cancelado":
       return "bg-red-100 text-red-900";
+    case "Entregue":
+      return "bg-green-100 text-green-900";
+    case "Pendente":
+      return "bg-yellow-100 text-yellow-900";
     default:
       return "bg-gray-100 text-gray-900";
   }

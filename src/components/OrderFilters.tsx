@@ -29,6 +29,7 @@ const OrderFilters: React.FC<OrderFiltersProps> = ({
         className="p-2 rounded-lg border border-gray-700 bg-gray-900 text-white shadow-inner"
       >
         <option value="">Todos os Status</option>
+        <option value="Aprovado">Aprovado</option>
         <option value="Cancelado">Cancelado</option>
         <option value="Entregue">Entregue</option>
         <option value="Pendente">Pendente</option>
