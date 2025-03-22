@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { mockOrders } from "../utils/mock";
 import { Order } from "../types/types";
 
@@ -24,12 +24,20 @@ const OrderDetails: React.FC = () => {
       day: "numeric",
     }
   );
-  
+
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-white mb-6">
-        Detalhes do Pedido #{order.id}
-      </h1>
+      <div className="flex items-center justify-between mb-6">
+        <Link to={`/`}>
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition-colors">
+            Voltar
+          </button>
+        </Link>
+
+        <h1 className="text-3xl font-bold text-white mb-6">
+          Detalhes do Pedido #{order.id}
+        </h1>
+      </div>
 
       <div className="bg-white/10 p-6 rounded-2xl shadow-lg mb-6 border border-gray-700 text-left">
         <h2 className="text-xl font-bold text-white mb-4 text-center">
@@ -61,7 +69,7 @@ const OrderDetails: React.FC = () => {
         </p>
       </div>
 
-      <div className="bg-white/10 p-6 rounded-2xl shadow-lg border border-gray-700 justify-between">
+      <div className="bg-white/10 p-6 rounded-2xl shadow-lg mb-6 border border-gray-700 justify-between">
         <h2 className="text-xl font-bold text-white mb-4">Itens do Pedido</h2>
         {order.items.map((item, index) => (
           <div
@@ -84,8 +92,10 @@ const OrderDetails: React.FC = () => {
         ))}
       </div>
 
-      <div className="text-right text-white font-bold text-2xl mt-6">
-        Total do Pedido: R${order.total.toFixed(2)}
+      <div className="bg-white/10 p-6 rounded-2xl shadow-lg border border-gray-700 text-right">
+        <h2 className="text-xl font-bold text-white">
+          Total do Pedido: R${order.total.toFixed(2)}
+        </h2>
       </div>
     </div>
   );
