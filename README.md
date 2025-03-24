@@ -1,4 +1,3 @@
-
 # 📢 Gerenciamento de Pedidos
 
 Esta aplicação foi desenvolvida para gerenciar pedidos de entrega. O objetivo é exibir uma lista de pedidos e permitir que os usuários filtrem os pedidos por nome do cliente e status. Além disso, a aplicação permite visualizar os detalhes de um pedido específico.
@@ -37,34 +36,41 @@ order-manager/
 ## 🎯 Como Rodar a Aplicação
 
 1. Clone o repositório:
+
    ```sh
    git clone https://github.com/leclm/order-manager.git
    cd order-manager
    ```
 
 2. Instale as dependências:
+
    ```sh
    npm install
    ```
 
 3. Inicie o servidor de desenvolvimento:
+
    ```sh
    npm run dev
    ```
 
 4. Acesse a aplicação no navegador em [http://localhost:5174](http://localhost:5174)
 
+## 🎯 Como Testar
+
+```sh
+npx jest
+```
 
 ## 📸 Screenshots
 
-| Home Mobile | Details Mobile
-|-----------|-------------|
+| Home Mobile                                | Details Mobile                                   |
+| ------------------------------------------ | ------------------------------------------------ |
 | ![Home Mobile](src/assets/home-mobile.png) | ![Details Mobile](src/assets/details-mobile.png) |
 
-| Home Desktop | Details Desktop
-|-----------|-------------|
+| Home Desktop                              | Details Desktop                                 |
+| ----------------------------------------- | ----------------------------------------------- |
 | ![Home Desktop](src/assets/home-desk.png) | ![Details Desktop](src/assets/details-desk.png) |
-
 
 ## 🛠️ Estrutura de Dados
 
@@ -77,8 +83,8 @@ A estrutura JSON usada para simular os pedidos contém as seguintes propriedades
       "uuid": "6f0945f1-6a83-4dfd-93bb-3242314196",
       "id": "158924",
       "status": "Pendente",
-      "total": 120.50,
-      "delivery_cost": 12.00,
+      "total": 120.5,
+      "delivery_cost": 12.0,
       "shipping_method": "Entrega Expressa",
       "delivery_estimated": "2025-02-17",
       "customer": {
@@ -90,7 +96,7 @@ A estrutura JSON usada para simular os pedidos contém as seguintes propriedades
           "imagem": "https://via.placeholder.com/150",
           "name": "Celular XYZ",
           "quantity": 1,
-          "price": 120.50
+          "price": 120.5
         }
       ]
     },
@@ -98,8 +104,8 @@ A estrutura JSON usada para simular os pedidos contém as seguintes propriedades
       "uuid": "6f0945f1-6a83-4dfd-93bb-3242314197",
       "id": "158925",
       "status": "Entregue",
-      "total": 72.30,
-      "delivery_cost": 12.00,
+      "total": 72.3,
+      "delivery_cost": 12.0,
       "shipping_method": "Entrega Normal",
       "delivery_estimated": "2025-02-17",
       "customer": {
@@ -111,7 +117,7 @@ A estrutura JSON usada para simular os pedidos contém as seguintes propriedades
           "imagem": "https://via.placeholder.com/150",
           "name": "Fone de Ouvido ABC",
           "quantity": 1,
-          "price": 72.30
+          "price": 72.3
         }
       ]
     }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
-import OrderList from "../components/OrderList";
 import { mockOrders } from "../utils/mock";
 import { Order } from "../types/types";
-import OrderFilters from "../components/OrderFilters";
+import OrderFilters from "../components/OrderFilters/OrderFilters";
+import OrderList from "../components/OrderList/OrderList";
 
 const Home: React.FC = () => {
   const [orders, setOrders] = useState<Order[]>([]);

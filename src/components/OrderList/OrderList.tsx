@@ -1,6 +1,6 @@
 import React from "react";
-import { Order } from "../types/types";
-import OrderCard from "./OrderCard";
+import { Order } from "../../types/types";
+import OrderCard from "../OrderCard/OrderCard";
 
 interface OrderListProps {
   orders: Order[];

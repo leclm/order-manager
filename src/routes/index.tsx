@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import OrderDetails from '../components/OrderDetails';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import OrderDetails from "../components/OrderDetails/OrderDetails";
 
 const App: React.FC = () => {
   return (

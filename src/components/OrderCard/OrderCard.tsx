@@ -1,6 +1,6 @@
 import React from "react";
-import { Order } from "../types/types";
 import { Link } from "react-router-dom";
+import { Order } from "../../types/types";
 
 interface OrderCardProps {
   order: Order;
@@ -27,7 +27,9 @@ const OrderCard: React.FC<OrderCardProps> = ({ order }) => {
       <div className="flex-1 w-full">
         <div className="flex justify-between items-center mb-4">
           <div>
-            <h2 className="text-2xl font-bold text-white">Pedido #{order.id}</h2>
+            <h2 className="text-2xl font-bold text-white">
+              Pedido #{order.id}
+            </h2>
             <p className="text-sm text-gray-400">
               <strong>Cliente:</strong> {order.customer.name}
             </p>
@@ -43,7 +45,9 @@ const OrderCard: React.FC<OrderCardProps> = ({ order }) => {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-blue-200 mb-2 text-left">Itens:</h3>
+          <h3 className="text-lg font-semibold text-blue-200 mb-2 text-left">
+            Itens:
+          </h3>
           {order.items.map((item, index) => (
             <div
               key={index}
